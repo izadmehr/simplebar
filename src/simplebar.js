@@ -44,7 +44,7 @@ export default class SimpleBar {
 
     static get defaultOptions() {
         return {
-            autoHide: true,
+            autoHide: false,
             classNames: {
                 content: 'simplebar-content',
                 scrollContent: 'simplebar-scroll-content',
