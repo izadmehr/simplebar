@@ -27,7 +27,7 @@ export default class SimpleBar {
         this.options = Object.assign({}, SimpleBar.defaultOptions, options);
         this.classNames = this.options.classNames;
         this.scrollbarWidth = scrollbarWidth();
-        this.offsetSize = 20;
+        this.offsetSize = 30;
         this.flashScrollbar = this.flashScrollbar.bind(this);
         this.onDragY = this.onDragY.bind(this);
         this.onDragX = this.onDragX.bind(this);
