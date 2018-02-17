@@ -26,7 +26,7 @@ export default class SimpleBar {
         this.currentAxis;
         this.options = Object.assign({}, SimpleBar.defaultOptions, options);
         this.classNames = this.options.classNames;
-        this.scrollbarWidth = scrollbarWidth();
+        this.scrollbarWidth = scrollbarWidth()*2.15;
         this.offsetSize = 30;
         this.flashScrollbar = this.flashScrollbar.bind(this);
         this.onDragY = this.onDragY.bind(this);
@@ -148,7 +148,7 @@ export default class SimpleBar {
         this.scrollbarY = this.trackY.querySelector(`.${this.classNames.scrollbar}`);
 
         this.scrollContentEl.style.paddingRight = `${this.scrollbarWidth || this.offsetSize}px`;
-        this.scrollContentEl.style.marginBottom = `-${this.scrollbarWidth*2 || this.offsetSize}px`;
+        this.scrollContentEl.style.marginBottom = `-${this.scrollbarWidth || this.offsetSize}px`;
         this.contentEl.style.paddingBottom = `${this.scrollbarWidth || this.offsetSize}px`;
 
 
